@@ -22,7 +22,6 @@ export default function Visualizer({
   segments = 100,
   radius = 2,
   height = 1,
-  length = 10,
 }: Props) {
   const lineRef = React.useRef<MeshLineGeometry>(null!);
 
