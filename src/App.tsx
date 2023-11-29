@@ -15,7 +15,6 @@ function App() {
         .getUserMedia({ audio: true, video: false })
         .then(function (stream) {
           const newAnalyzer = new AudioAnalyzer();
-
           setAnalyzer(newAnalyzer.analyzeAudio(stream));
         })
         .catch(function (err) {
